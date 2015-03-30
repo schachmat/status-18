@@ -2,9 +2,9 @@ PERL	= perl
 BDF2PSF	= $(PERL) ./bdftopsf.pl +u
 BDF2PCF	= bdftopcf
 
-all: status-18.psf status-18.pcf
-psf: status-18.psf
 pcf: status-18.pcf
+psf: status-18.psf
+all: psf pcf
 
 DESTDIR	=
 psfdir	= /usr/share/consolefonts
